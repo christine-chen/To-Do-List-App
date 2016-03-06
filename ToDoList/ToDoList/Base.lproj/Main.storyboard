@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--My Amazing To-Do List-->
+        <!--To-Do List-->
         <scene sceneID="4d4-Xx-vJc">
             <objects>
                 <tableViewController id="EqL-Yv-Ok3" customClass="ToDoListTableViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,10 +64,10 @@
                             <outlet property="delegate" destination="EqL-Yv-Ok3" id="78v-Xk-yfy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Amazing To-Do List" id="abp-k3-4rd">
+                    <navigationItem key="navigationItem" title="To-Do List" id="abp-k3-4rd">
                         <barButtonItem key="leftBarButtonItem" title="Daily Stats" id="6c0-Jj-gLz">
                             <connections>
-                                <segue destination="UUI-09-ZfS" kind="show" id="gqq-25-vVT"/>
+                                <segue destination="7qc-WW-ckw" kind="show" id="B8v-BM-WxX"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="X9O-EV-EWN">
@@ -182,22 +182,15 @@
                             <constraint firstItem="W8G-jO-cmO" firstAttribute="centerY" secondItem="Dls-7A-ylb" secondAttribute="centerY" id="uts-Lc-oXK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Daily Statistics" id="9Ie-Ui-0x9">
-                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="ows-o3-uqq">
-                            <connections>
-                                <segue destination="cgN-JL-dKr" kind="unwind" unwindAction="returnFromStats:" id="tqW-Je-IiX"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Daily Statistics" id="9Ie-Ui-0x9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="numOfToDosCompleted" destination="W8G-jO-cmO" id="7gE-Jb-ssN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHZ-Db-Mrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="cgN-JL-dKr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1529.5" y="-335.5"/>
+            <point key="canvasLocation" x="1048.5" y="-347.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CPJ-rk-Nfg">
@@ -217,24 +210,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANY-FR-Op8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="42.5" y="423.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="RFX-6B-xPO">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UUI-09-ZfS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xt7-px-Yjf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7qc-WW-ckw" kind="relationship" relationship="rootViewController" id="BM4-g3-8tE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hPO-qP-Hxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1048.5" y="-335.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ldb-li-0lb">

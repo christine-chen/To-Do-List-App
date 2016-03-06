@@ -158,8 +158,7 @@ class ToDoListTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
          //Get the new view controller using segue.destinationViewController.
          //Pass the selected object to the new view controller.
-        let navigationController = segue.destinationViewController as? UINavigationController
-        let dailyStats = navigationController?.topViewController as? DailyStatsViewController
+        let dailyStats = segue.destinationViewController as? DailyStatsViewController
         dailyStats?.numberFromTableView = String(numberOfCompletedTasks)
     }
 }
